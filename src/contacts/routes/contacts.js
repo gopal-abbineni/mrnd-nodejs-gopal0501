@@ -10,7 +10,7 @@ router.get('/:id', function(req, res, next) {
 router.post('/', function(req, res, next) {
 	arr[index++]=req.body;
 	res.send(""+(index-1));
-  //console.log(req.body);
+  console.log(req.body);
 });
 
 router.put('/:id', function(req, res, next) {

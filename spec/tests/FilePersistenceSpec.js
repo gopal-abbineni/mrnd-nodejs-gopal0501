@@ -3,7 +3,7 @@ var fs=require('fs');
 var getContactFileName = function(id) {
 
 	// We assume contacts are stored under data sub-folder
-	return "..\\..\\src\\contacts\\data\\" + id + "-Contact.json";
+	return "D:\\MRND\\src\\contacts\\data\\" + id + "-Contact.json";
 }
 
 var request = require('C:/Program Files/nodejs/node_modules/npm/node_modules/request');
@@ -42,9 +42,10 @@ describe("FilePersistence Test Suite", function(){
 					    });
 		});
 
-		xit("should persist contact",function(done){
+		it("should persist contact",function(done){
 
 			var fileName = getContactFileName(idCreated);
+            console.log(fileName);
 
 			var obj = JSON.parse(fs.readFileSync(fileName));
 

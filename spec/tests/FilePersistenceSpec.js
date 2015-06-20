@@ -53,7 +53,7 @@ describe("FilePersistence Test Suite", function(){
 			done();
 
 		});
-		xit("should update contact",function(done){
+		it("should update contact",function(done){
 
 			var updatedContact = new Object();
 			updatedContact.firstName = "jagan-updated";
@@ -79,7 +79,7 @@ describe("FilePersistence Test Suite", function(){
 	//TODO: Fill out the test case below that posts a message to a contact
 	// and retrieves it back.
 	describe("post and get message to contact", function(){
-		xit("should post message to contact", function(done){
+		it("should post message to contact", function(done){
 			//TODO: Write your test case here.
            var updatedContact = new Object();
 			updatedContact.message = "jagan-message";
@@ -101,7 +101,7 @@ describe("FilePersistence Test Suite", function(){
 					    });
         });
 
-		xit("should get message for contact", function(done){
+		it("should get message for contact", function(done){
 			//TODO: Write your test case here.
             request.get({
 							url: contacts_url + "/" + idCreated,
